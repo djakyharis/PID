@@ -2,7 +2,7 @@ Hands-On: Sensor Inventory MySQL dengan Docker
 
 ##  Langkah-Langkah Praktik
 
-### 1Persiapan Environment
+### 1. Persiapan Environment
 ```bash
 # Pastikan Docker sudah terinstall dan berjalan
 docker --version
@@ -194,15 +194,14 @@ WHERE s.tanggal_pasang >= DATE_SUB(NOW(), INTERVAL 6 MONTH);
 ### 7.  Tugas Praktik
 
 
-1. Tambah 2 lokasi baru
-2. Tambah 3 sensor baru
-3. Update status salah satu sensor
-4. Query semua sensor aktif
-
-1. Buat view untuk gabungan sensor dan lokasi
-2. Hitung total sensor per status
-3. Cari lokasi yang belum ada sensornya
-4. Update tanggal pasang semua sensor suhu
+1. Tambah 2 lokasi baru [✓] (Menambahkan Ruang Praktik)
+2. Tambah 3 sensor baru [✓] (Technically udah ditambah pas praktik)
+3. Update status salah satu sensor [✓] (Update seluruh sensor yang 'Aktif' menjadi 'Tidak Aktif')
+4. Query semua sensor aktif [✓] 
+5. Buat view untuk gabungan sensor dan lokasi 
+6. Hitung total sensor per status
+7. Cari lokasi yang belum ada sensornya
+8. Update tanggal pasang semua sensor suhu
 
 
 
@@ -231,13 +230,13 @@ docker exec -i sensor_inventory_mysql mysql -u admin -p inventory < backup.sql
 ### 9.  Validasi Hasil
 
 **Checklist:**
-- [ ] Container MySQL berjalan di port 3306
-- [ ] Container phpMyAdmin berjalan di port 8080
-- [ ] Database `inventory` terbuat
-- [ ] Tabel `lokasi` dan `sensor` ada dengan data
-- [ ] Bisa login ke phpMyAdmin
-- [ ] Query JOIN berfungsi dengan baik
-- [ ] Foreign key constraint bekerja
+- [✓] Container MySQL berjalan di port 3306
+- [✓] Container phpMyAdmin berjalan di port 8080
+- [✓] Database `inventory` terbuat
+- [✓] Tabel `lokasi` dan `sensor` ada dengan data
+- [✓] Bisa login ke phpMyAdmin
+- [✓] Query JOIN berfungsi dengan baik
+- [✓] Foreign key constraint bekerja
 
 ### 10.  Troubleshooting
 
