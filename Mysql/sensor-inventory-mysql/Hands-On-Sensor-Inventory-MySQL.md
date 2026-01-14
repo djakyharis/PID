@@ -198,10 +198,10 @@ WHERE s.tanggal_pasang >= DATE_SUB(NOW(), INTERVAL 6 MONTH);
 2. Tambah 3 sensor baru [✓] (Technically udah ditambah pas praktik)
 3. Update status salah satu sensor [✓] (Update seluruh sensor yang 'Aktif' menjadi 'Tidak Aktif')
 4. Query semua sensor aktif [✓] 
-5. Buat view untuk gabungan sensor dan lokasi 
-6. Hitung total sensor per status
-7. Cari lokasi yang belum ada sensornya
-8. Update tanggal pasang semua sensor suhu
+5. Buat view untuk gabungan sensor dan lokasi [✓]  
+6. Hitung total sensor per status  [✓]  
+7. Cari lokasi yang belum ada sensornya [✓]  
+8. Update tanggal pasang semua sensor suhu [✓]  
 
 
 

@@ -121,13 +121,13 @@ print('Database initialization completed!');
 
 ```bash
 # Jalankan container
-docker-compose up -d
+docker compose up -d
 
 # Cek status container
-docker-compose ps
+docker ps
 
 # Lihat logs MongoDB untuk memastikan inisialisasi berhasil
-docker-compose logs mongodb
+docker compose logs mongodb
 
 # Tunggu sampai melihat pesan "Database initialization completed!"
 ```
